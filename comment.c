@@ -1,8 +1,7 @@
 #include<stdio.h>
-#include<conio.h>
+#include<stdio.h>
 int main()
 {
-    printf("Hi everybody\t");
-    printf("I am learning c.");
-    'returno';
+    printf("Hello World\\Good morning ");
+    'return0';
 }
