@@ -2,7 +2,7 @@
 #include<conio.h>
 int main()
 {
-    printf("Hello World\n\n");
+    printf("Hi everybody\t");
     printf("I am learning c.");
-    'return0';
+    'returno';
 }
