@@ -2,7 +2,7 @@
 #include<conio.h>
 int main()
 {
-
-    printf("Hello/manshi/");
+    int myNum=15;
+    printf("my fevoret number is %d",15);
     'return0';
 }
