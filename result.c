@@ -1,30 +1,11 @@
 #include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-int main(int argc, char *argv[])
+int main()
 {
-    char *operation;
-    int num1, num2;
-    operation = argv[1];
-    num1 = atoi(argv[2]);
-    num2 = atoi(argv[3]);
+    char str [10] ={'B','H','O','P','A','L'};
+    int i;
+    for (i=0; str[i],i++);
+    printf("Lenth is %d",i);
+    'return0';
 
-    printf("operation is %d\n",operation);
-    printf("Num1 is %d\n",num1);
-    printf("Num2 is %d\n",num2);
-
-    if(strcmp(operation,"add")== 0){
-        printf("%d\n",num1+num2);
-    }
-    else if(strcmp(operation,"subtract")==0){
-        printf("%d\n",num1-num2);
-    }
-    else if (strcmp(operation,"multiply")==0){
-        printf("%d\n",num1*num2);
-
-    }
-    else if(strcmp(operation,"divide")==0){
-        printf("%d\n",num1/num2);
-        'return0';
-    }
 }
+
