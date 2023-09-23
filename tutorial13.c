@@ -2,8 +2,8 @@
 #include<conio.h>
 int main()
 {
-    int myNum = 15;
-    int myLetter = 'D';
-    printf("MyNum is %d and myLetter is %c",myNum,myLetter);
+    int a=12,b=11;
+    int maltiply =a*b;
+    printf("%d",a*b);
     'return0';
 }
