@@ -2,7 +2,7 @@
 #include<conio.h>
 int main()
 {
-    const Float = 9.999;
-    printf("%f",Float);
+    const Float=7.55;
+    printf("%f",7.55);
     'return0';
 }
