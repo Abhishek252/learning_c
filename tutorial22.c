@@ -2,7 +2,10 @@
 #include<conio.h>
 int main()
 {
-    char str[10]={'B','H','O','P','A','L'};
-    printf("%s",str);
+    int x;
+    x=sizeof(short int);
+    printf("%d",x);
     'return0';
+
 }
+
