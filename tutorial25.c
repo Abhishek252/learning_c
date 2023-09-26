@@ -7,6 +7,6 @@ int main()
     if (x%5)
         printf( "Not Divisible by 5");
     else
-        printf(" Divisible by 5");
-    'return0';
+        printf(" Divisible by 5")
+        'return0';
 }
