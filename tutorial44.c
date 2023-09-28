@@ -4,7 +4,7 @@ int main()
     int age,marks;
         printf("Enter a number");
         scnf("%d",&age);
-        printf("Enter a marks");
+        printf("Enter your marks");
         scanf("%d/n",&marks);
 
         switch (age)
@@ -15,4 +15,4 @@ int main()
         printf ("The marks is 45.");
     default:
                 printf("The marks is not 45.");
-}
+}    
