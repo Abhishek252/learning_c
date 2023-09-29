@@ -2,9 +2,28 @@
 #include<conio.h>
 int main()
 {
-    int myNumbers[]={12,24,36,48};
-    myNumbers[0]= 33;
-    printf("%d\n",myNumbers[0]);
-    'return0';
+    int age,marks;
+    printf("Enter a number");
+    scanf("%d\n",&age);
+    printf("Enter a number");
+    scanf("%d\n",&marks);
 
+    switch(age)
+    {
+    case 3:
+        printf("The age is 3.");
+        break;
+        switch(marks)
+    case 45:
+        printf("The marks is 45.");
+        break;
+    case 13:
+        printf("the age is 13.");
+        break;
+    case 23:
+        printf("The age is 23.");
+        break;
+
+    }
+    'return0';
 }
