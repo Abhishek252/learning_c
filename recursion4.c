@@ -9,7 +9,7 @@ int main()
 }
 int sum(intk)
 {
-    if (K>0){
+    if (K > 0){
         return k + sum (k -1);
 
     }else
