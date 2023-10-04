@@ -2,7 +2,6 @@
 #include<math.h>
 int main()
 {
-    printf("%f\n",ceil(4.5));
-    printf("%f\n",floor(4.5));
+    printf("%f",pow(8,3));
     'return0';
 }
