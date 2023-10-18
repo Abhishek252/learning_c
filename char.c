@@ -10,5 +10,5 @@ void main()
         numbers= -numbers;
         printf("The absolute value is %d \n ", numbers);
     }
-    return 0;
+    return 0;  -
 }
