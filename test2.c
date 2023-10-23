@@ -2,7 +2,7 @@
 int main()
 {
     FILE *fptr;
-    fptr=fopen("test.txt", "a+");
+    fptr=fopen("tesnt.txt", "a+");
     char schoolName[60];
     fgets(schoolName,60, fptr);
     printf("Enter a schoolName\n");
