@@ -1,8 +1,9 @@
 #include<stdio.h>
-#define PI 3.14
 int main()
 {
-
-    printf("%d ", PI);
+    int a,b;
+    printf("Enter two value\n");
+    scanf("%d%d\n",&a,&b);
+    printf("%d%d",a,b);
     return 0;
 }
