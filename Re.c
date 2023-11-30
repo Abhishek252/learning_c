@@ -1,7 +1,9 @@
 #include<stdio.h>
+#include<conio.h>
 int main()
 {
-    char x[]= "Hi Himanshi";
-    printf("%s",x);
+    int a= 23;;
+    int b= 13;
+    printf("%d",a%b);
     return 0;
 }

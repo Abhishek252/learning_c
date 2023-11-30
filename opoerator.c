@@ -2,8 +2,8 @@
 #include<conio.h>
 int main()
 {
-    int a=45;
-    int b=29;
-    printf("%d\n",(45|29));
+    int a= 12;
+    int b=10;
+    printf("%d",a-b);
     return 0;
 }
