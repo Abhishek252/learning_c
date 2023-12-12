@@ -1,23 +1,21 @@
 #include<stdio.h>
+#include<conio.h>
 int main()
 {
-    int date;
-    printf("Enter your date\n");
-    scanf("%d",&date);
-    printf("%d",date);
-    switch (date)
+    int r,c,num, v1=1;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    for(r=1; r<=num; r++)
     {
-    case 12:
-        printf("The date is:12");
-        break;
-    case 2:
-        printf("The date is:13");
-        break ;
-    case 3:
-        printf("The date is:25");
-        break;
-    default:
-        printf("The date is not: 12,13 or 25");
+        for(c=1; c<=r; c++)
+        {
+            printf("%d",v1);
+            if(v1==1)
+                v1=0;
+            else
+                v1=1;
+        }
+        printf("\n");
     }
-    return 0;
+    getch();
 }
