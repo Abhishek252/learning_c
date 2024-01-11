@@ -1,4 +1,4 @@
-#include<stdio.h>
+git add .#include<stdio.h>
 #include<conio.h>
 void add();
 int main()
