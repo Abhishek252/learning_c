@@ -7,6 +7,6 @@ int main()
     a=10;
     b=20;
     g=a+b;
-    printf("Value of a=%d, b=%d, and g=%d/n",a,b,g);
+    printf("Value of a=%d, b=%d, and g=%d",a,b,g);
     return 0;
 }
