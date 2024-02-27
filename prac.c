@@ -1,14 +1,16 @@
 #include<stdio.h>
 #include<conio.h>
+void multiplication();
 int main()
 {
-    int a=10;
-    int b=20;
-    a=a+b;
-    b=a-b;
-    a=a-b;
-    printf("%d%d",a,b);
+    multiplication();
     return 0;
-
 }
-
+void multiplication()
+{
+    int x,y,z;
+    printf("Enter two number\n");
+    scanf("%d%d",&x,&y);
+    z=x*y;
+    printf("multiplication of =%d",z);
+}
