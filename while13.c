@@ -1,4 +1,4 @@
-#include<stdio.h>
+gi#include<stdio.h>
 #include<conio.h>
 int main()
 {

@@ -1,10 +1,13 @@
 #include<stdio.h>
+#include<conio.h>
 int main()
 {
-
-    char name[]= "himanshi";
-    int i;
-    for(i=0;i<8; i++)
-        printf("%c",name[i]);
+    int x = 10;
+    int *y, **r, ***t;
+    y = &x;
+    r = &y;
+    t = &r;
+    printf("%d\n %d\n %d\n", y, r, t);
+    printf("%d\n %d\n %d\n", *y, **r, ***t);
     return 0;
 }
