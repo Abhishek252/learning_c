@@ -1,8 +1,13 @@
 #include<stdio.h>
-FILE *fptr;
-fptr = fopen("filename. txt", "w");
-fprintf(fptr, "some text");
-fclose(fptr);
-return 0
+int main()
+{
+    FILE* file;
+    file = fopen("text. txt", "r");
+    printf("%s", "Some text");
+    fclose(file);
+    return 0;
+
+
+}
 
 
