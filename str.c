@@ -1,19 +1,20 @@
 #include<stdio.h>
-#include<string.h>
-struct mystructure
+struct Books
 {
-    int mynum;
-    float myfloat ;
-    char mystring[40];
+    int bookId;
+    int  bookPrice;
+    int  bookPages;
 };
+
 int main()
 {
-    struct mystructure s1 = {13, 22.5, "some text"};
+    struct Books b1;
+    b1. bookId = 82;
+    b1. bookPrice = 200;
+    b1. bookPages = 325;
 
-    struct mystructure s2;
-    s2 = s1;
-    //print value
-    printf("%d\n %f\n %s\n", s2.mynum, s2.myfloat, s2.mystring);
+    printf("bookid is %d\n", b1.bookId);
+    printf("bookPrice is %d\n", b1.bookPrice);
+    printf("bookPages is %d\n", b1.bookPages);
     return 0;
-
 }
