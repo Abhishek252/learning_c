@@ -5,7 +5,7 @@ int main()
     int a;
     printf("Enter anumber");
     scanf("%d", &a);
-    if(a%4 == 0)
+    if(a %4 == 0)
     {
         printf("the number is positive");
     }
