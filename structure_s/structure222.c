@@ -12,10 +12,7 @@ struct book
 int main()
 
 {
-    struct book b1;
-    b1.price  = 23;
-    b1.pages = 35;
-   strcpy (b1.name,  "learn C");
+    struct book b1 = { 200, 300, "physics"};
    struct book *b;
    b = &b1;
    printf("book price %d\n", b->price);
