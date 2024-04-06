@@ -22,7 +22,7 @@ int main()
     printf("Picomon hp %d\n", P1.hp);
     printf("Picachu speed %d\n", P1.speed);
     printf("Picachu name %s\n", P1.name);
-    printf("Picachu tier %c\n", P1.tier );;
+    printf("Picachu tier %c\n", P1.tier );
     return 0;
 
 }
