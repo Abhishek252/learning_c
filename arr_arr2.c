@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int arr[3] = {1,2 , 3,4};
+    int arr[3] = {1,2 , 3,};
     int _arr[4] = {4, 5, 6, 7};
     int i, j;
     int x, y;
-    for(i=1;i<5;i++)
+    for(i=1;i<3;i++)
     {
         for(j=1;j<5;j++)
         {
