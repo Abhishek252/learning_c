@@ -2,7 +2,7 @@
 void dsa(int array[], int length)
 {
     int i;
-    int sum =0;
+    int sum = 0;
     int product = 31;
     for(i = 0; i < length; i++)
     {
