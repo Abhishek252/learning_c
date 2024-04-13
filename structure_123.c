@@ -6,8 +6,7 @@ struct date{
     int day;
     int month;
     int year;
-
-
+    
 };
 
 int main(){
@@ -23,12 +22,6 @@ int main(){
     printf("%d\n",dt->day );
     printf("%d\n", dt->month);
     printf("%d\n", dt->year);
-
-
-
-
-    
-    
 
    // printf("day %d\n", d1.day);
    // printf("month %d\n", d1.month);
