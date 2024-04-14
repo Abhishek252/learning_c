@@ -1,5 +1,5 @@
 #include<stdio.h>
-void dsa(int array[], int length)
+void foo(int array[], int length)
 {
     int i;
     int sum = 0;
@@ -18,6 +18,6 @@ void dsa(int array[], int length)
 int main()
 {
     int arr[] = {3, 5, 66};
-    dsa(arr, 3);
+    foo(arr, 3);
     return 0;
 }
