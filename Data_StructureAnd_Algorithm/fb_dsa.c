@@ -9,6 +9,7 @@ int main()
     {
         newFibo = previous1 + previous2;
         printf("%d\n", newFibo);
+        
         previous2 = previous1;
         previous1 = previous2;
 
