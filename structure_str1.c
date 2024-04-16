@@ -22,10 +22,9 @@ int main()
     printf("enter salary");
     scanf("%d", & emp1.salary);
 
-    printf("\n employee of details");
-    printf("\n employee id_no : %d",emp1.id_no);
-    printf("\n employee name : %s", emp1.name );
+   printf("\nemployee id_no : %d", emp1.id_no);
+    printf("\n employee name : %s", emp1.name);
     printf("\n employee designation : %s", emp1.designation);
-    printf("\n employee salary : %s", emp1.salary);
+   printf("\n employee salary : %s", emp1.salary);
     return 0;
 }
