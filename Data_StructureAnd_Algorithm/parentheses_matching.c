@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    char arr[] = {'(','{','}',')',};
+    char arr[] = {'(','{','}',')'};
     
     arr[0] = '(';
     arr[1] = '{';
@@ -9,13 +9,13 @@ int main()
     arr[3] = ')';
     
 
-    for(int i = 0; i<4; i++)
-    {
+   for(int i = 0; i<4; i++)
+   {
        printf("%c",arr[i]);
-      //  printf("%lu", sizeof(arr));
+      // printf("%lu", sizeof(arr));
 
     }
-    if(arr[0]== '('&& arr[1]== '{' && arr[2]== '}' && arr[3] == ')')// && arr [4] == ']' )
+    if(arr[0]== '('&& arr[1]== '{' && arr[2]== '}' && arr[3] == ')') //&& arr [4] == ']' )
     {
         printf("it's matching\n");
     }
