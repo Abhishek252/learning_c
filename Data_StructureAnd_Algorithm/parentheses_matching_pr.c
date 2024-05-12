@@ -55,7 +55,7 @@ void push(struct stack* ptr, char val){
 }
  
 int parenthesisMatch(char * exp){
-    // Create and initialize the stack
+    
     struct stack *sp;
 
     sp->size = 100;
@@ -84,7 +84,7 @@ int parenthesisMatch(char * exp){
 int main()
 {
     char * exp = "{({})}";
-    // Check if stack is empty
+    
     if(parenthesisMatch(exp)){
         printf("The parenthesis is matching");}
     else{
