@@ -2,7 +2,7 @@
 #include<stdlib.h>
 struct stack
 {
-    int size ;
+    int size;
     int top;
     char *arr;
 };
@@ -10,18 +10,18 @@ struct stack
 int isEmpty(struct stack *ptr)
 {
     if(ptr->top==-1)
-
     {
         return 1;
     }
     else{
+
         return 0;
     }
 }
 
 int isFull(struct stack *ptr)
 {
-    if(ptr->top == ptr->size-1)
+    if(ptr->top==ptr->size-1)
     {
         return 1;
     }
@@ -30,16 +30,15 @@ int isFull(struct stack *ptr)
     }
 }
 
-void push (struct stack *ptr, char val)
+void push(struct stack *ptr, char val)
 {
     if(isFull(ptr))
     {
-        printf("Stack Underflow! Cannot push %d to the stack\n");
+        printf("Stack Overflow! Cannot push %d to the stack\n");
 
     }
     else{
-
-        ptr->arr[ptr->top]=  val;
+        ptr->arr[ptr->top] = val;
         ptr->top++;
     }
 }
@@ -48,59 +47,84 @@ char pop(struct stack *ptr)
 {
     if(isEmpty(ptr))
     {
-        printf("Stack Overflow! Cannot pop from the stack\n");
+        printf("Stack Underflow! Cannot pop from the stack\n");
+        return -1;
+    
     }
     else{
-
         char val = ptr->arr[ptr->top];
         ptr->top--;
         return val;
     }
 }
 
+
+
+
+int match(char a, char b)
+{
+    if(a== '{' && b== '}')
+    {
+        return 1;
+    }
+    if(a== '(' && b== ')')
+    {
+        return 1;
+    }
+    if(a=='[' && b== ']')
+    {
+        return 1;
+    }
+}
+
 int parenthesesMatch(char *exp)
 {
     struct stack *sp;
-    sp->size=100;
+    sp->size = 80;
     sp->top = -1;
-    sp-> arr = (char*) malloc(sp->size * sizeof(char));
+    sp->arr = (char *) malloc(sp->size * sizeof(char));
+     char popped_ch ;
 
     for(int i=0; exp[i]!='\0'; i++)
     {
-        if(exp[i]=='(')
+        if(exp[i] == '{' ||exp[i]== '(' || exp[i]== '[')
         {
-            push(sp,'(');
+            push(sp, exp[i]);
         }
-        else if (exp[i]==')')
+        else if(exp[i]=='}' || exp[i]==')' || exp[i] == ']')
         {
             if(isEmpty(sp))
             {
                 return 0;
             }
-            pop(sp);
+
+            popped_ch = pop(sp);
+            if(!match (popped_ch, exp[i]))
+            {
+                return 0;
+            }
         }
-        
     }
     if(isEmpty(sp))
     {
         return 1;
     }
     else{
-        return 0;
+        return 1;
     }
-}                        
+}
 
 int main()
 {
-    char *exp = "{({})}";
+    char *exp = "{{[()]}}";
+
     if(parenthesesMatch(exp))
     {
         printf("The parentheses are matching\n");
     }
-
     else{
-        printf("The parentheses are not matching\n");
 
+        printf("The parentheses are not matching\n");
     }
     return 0;
 }
