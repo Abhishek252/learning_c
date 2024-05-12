@@ -8,7 +8,7 @@ int parentheses_Matching( char *arr) {
      while (*arr!= '\0') {
         if (*arr == '{' || *arr =='(' || *arr == '{')
             balance++;
-        else if (*arr == '}'||*arr == ')' || *arr == '}')
+        else if (*arr == '}'||*arr == '}' || *arr == ')')
             balance--;
 
         if (balance < 0) 

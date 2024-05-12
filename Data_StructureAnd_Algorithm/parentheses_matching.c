@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    char arr[] = {'(','{','}',')'};
+    char arr[] = {'(','[',']',')'};
     
     arr[0] = '(';
     arr[1] = '{';
