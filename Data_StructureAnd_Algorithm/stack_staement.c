@@ -38,6 +38,9 @@ int main()
     sp->size= 60;
     sp->top-1;
     sp->arr = (int*)malloc(sp->size * sizeof(int));
+    sp->arr[0] = 20;
+    sp->arr[1] = 30;
+    sp->top++;
 
     if(isEmpty(sp))
     {

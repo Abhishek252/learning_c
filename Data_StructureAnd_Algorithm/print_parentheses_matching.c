@@ -35,17 +35,19 @@ int parenthesisMatching(char *exp) {
     sp.top = -1;
     sp.arr = (char *)malloc(sp.size * sizeof(char));for (int i = 0; exp[i] != '\0'; i++) {
         if (exp[i] == '(') {
+            
             push(&sp, '(');
-        } else if (exp[i] == ')') {
+        } 
+        else if (exp[i] == ')') {
             if (isEmpty(&sp)) {
-                free(sp.arr); // Free dynamically allocated memory before returning
+                free(sp.arr); 
                 return 0;
             }
             pop(&sp);
         }
-    }int result = isEmpty(&sp); // Check if stack is empty
+    }int result = isEmpty(&sp); 
     
-    free(sp.arr); // Free dynamically allocated memory before returning
+    free(sp.arr); 
     return result;
 }
 
