@@ -29,7 +29,7 @@ void push(struct stack *ptr, int val)
 {
     if(isFull(ptr))
     {
-        printf("Stack Overflow!");
+        printf("Stack Overflow! cannot push %d to the stack", val);
     }
     else{
         ptr->arr[ptr->top]= val;
@@ -64,25 +64,26 @@ int main()
     printf("Before pushing  ,isEmpty:%d\n ", isEmpty(sp));
 
     push(sp, 1);
-    push(sp,2);
-    push(sp,3);
-    push(sp,4);
-    push(sp,5);
-    push(sp,6);
-    push(sp,7);
-    push(sp,8);
-    push(sp,9);
-    push(sp,10);
+    push(sp, 2);
+    push(sp, 3);
+    push(sp, 4);
+    push(sp, 5);
+    push(sp, 6);
+    push(sp, 7);
+    push(sp, 8);
+    push(sp, 9);
+    push(sp, 10);
+    
 
     printf("After pushing, Full :%d\n", isFull(sp));
     printf("After pushing, Empty: %d\n", isEmpty(sp));
 
-    printf("popped from the stack %d\n", pop(sp));
+    printf("popped from the stack %d\n",pop(sp));
     printf("Popped from the stack %d\n", pop(sp));
     printf("Popped from the stack %d\n", pop(sp));
     printf("Popped from the stack %d\n", pop(sp));
     printf("Popped from the stack %d\n", pop(sp));
-    printf("Popped from the stack %d\n", pop(sp));
+    
     
     return 0;
 }
