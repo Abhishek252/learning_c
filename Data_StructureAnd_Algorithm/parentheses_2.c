@@ -58,9 +58,6 @@ char pop(struct stack *ptr)
     }
 }
 
-
-
-
 int match(char a, char b)
 {
     if(a== '{' && b== '}')
