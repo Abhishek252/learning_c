@@ -7,18 +7,31 @@ struct stack {
     char *arr;
 };
 
-int isEmpty(struct stack *ptr) {
-    return (ptr->top == -1);}
+int isEmpty(struct stack *ptr)
+{
+    if(ptr->top==-1)
+    {
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+    
 
 int isFull(struct stack *ptr) {
     return (ptr->top == ptr->size - 1);
 }
 
-void push(struct stack *ptr, char val) {
-    if (isFull(ptr)) {
-        printf("Stack Overflow! Cannot push %c to the stack\n", val);
-    } else {
-        ptr->arr[++ptr->top] = val;
+void push(struct stack *ptr, char val)
+{
+    if(isFull(ptr)){
+        printf("stack Overflow! Cannot push %d to the stack\n");
+
+    }
+    else{
+        ptr->arr[ptr->top] = val;
+        ptr->top--;
     }
 }
 char pop(struct stack *ptr) {
@@ -33,7 +46,8 @@ int parenthesisMatching(char *exp) {
     struct stack sp;
     sp.size = 100;
     sp.top = -1;
-    sp.arr = (char *)malloc(sp.size * sizeof(char));for (int i = 0; exp[i] != '\0'; i++) {
+    sp.arr = (char *)malloc(sp.size * sizeof(char));
+    for (int i = 0; exp[i] != '\0'; i++) {
         if (exp[i] == '(') {
             
             push(&sp, '(');
