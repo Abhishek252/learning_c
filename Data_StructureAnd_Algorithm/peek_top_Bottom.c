@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+
 struct stack
 {
     int size;
@@ -54,11 +55,13 @@ int pop(struct stack *ptr)
         return val;
     }
 }
+
+
 int peek(struct stack *sp, int i)
 {
     int arrayInd = sp->top-i+1;
     
-        if(arrayInd< 0)
+     if(arrayInd< 0)
         {
             printf("Not a valid position for the stack\n");
             return 1;
@@ -66,6 +69,17 @@ int peek(struct stack *sp, int i)
         else{
 
         }  return sp->arr[arrayInd];   
+}
+
+int stackTop(struct stack *sp)
+{
+    return sp->arr[sp->top];
+    
+}
+
+int stackBottom(struct stack *sp)
+{
+    return sp->arr[0];
 }
 
 int main()
@@ -92,13 +106,20 @@ int main()
    push(sp,75);
    push(sp,85);
 
-   printf("After pushing, Full:%d\n", isFull(sp));
-   printf("After pushing, Empty: %d\n", isEmpty(sp));
+   printf("The top most value of this stack is %d\n", stackTop(sp));
+   printf("The bottom most value of this stack is %d\n", stackBottom(sp));
 
-   for(int j=0; j<=sp->top+1; j++)
-   {
-    printf("the value of position %d is %d\n", j,peek(sp,j));
+   //printf("After pushing, Full:%d\n", isFull(sp));
+  // printf("After pushing, Empty: %d\n", isEmpty(sp));
 
-   }
+  // printf("popped from the stack %d\n", pop(sp));
+   //printf("popped from the stack %d\n", pop(sp));
+   //printf("popped from the stack %d\n", pop(sp));
+
+  // for(int j=1; j<=sp->top+1; j++)
+  // {
+   // printf("the value of position %d is %d\n", j,peek(sp,j));
+
+   //}
    return 0;
 }

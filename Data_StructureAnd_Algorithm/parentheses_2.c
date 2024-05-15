@@ -113,7 +113,7 @@ int parenthesesMatch(char *exp)
 
 int main()
 {
-    char *exp = "{{[()]}}";
+    char *exp = "{([])}";
 
     if(parenthesesMatch(exp))
     {
