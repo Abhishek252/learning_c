@@ -61,7 +61,7 @@ int peek(struct stack *sp, int i)
         if(arrayInd< 0)
         {
             printf("Not a valid position for the stack\n");
-            return 1;
+            return -1;
         }
         else{
 
