@@ -39,7 +39,7 @@ void push(struct stack *ptr, int val)
     }
     else{
 
-        ptr->arr[ptr->top]=val;
+        ptr->arr[ptr==NULL]=val;
         ptr->top++;
     }
 }
