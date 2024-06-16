@@ -1,0 +1,3 @@
+student name = manshi
+student age  = 17
+student marks = 67
